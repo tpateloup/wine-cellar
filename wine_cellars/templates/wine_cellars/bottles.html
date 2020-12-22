@@ -1,0 +1,17 @@
+{% extends "wine_cellars/base.html" %}
+
+{% block page_header %}
+<h1>Bottles</h1>
+{% endblock page_header %}
+
+{% block content %}
+<ul>
+	{% for bottle in bottles %}
+	<li><h3>
+		<a href="{% url 'wine_cellars:bottle' bottle.id %}">{{ bottle }}</a>
+	</h3></li>
+	{% empty %}
+	<li> No bottle for now. </li>
+	{% endfor %}
+</ul>
+{% endblock content %}

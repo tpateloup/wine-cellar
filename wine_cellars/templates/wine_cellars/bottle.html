@@ -1,0 +1,35 @@
+{% extends 'wine_cellars/base.html' %}
+
+{% block content %}
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Domain</h5>
+    <h6 class="card-subtitle mb-2 text-muted">{{ bottle.domain }}</h6>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Batch</h5>
+    <h6 class="card-subtitle mb-2 text-muted">{{ bottle.batch }}</h6>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Year</h5>
+    <h6 class="card-subtitle mb-2 text-muted">{{ bottle.year }}</h6>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Appellation</h5>
+    <h6 class="card-subtitle mb-2 text-muted">{{ bottle.appellation }}</h6>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Area</h5>
+    <h6 class="card-subtitle mb-2 text-muted">{{ bottle.area }}</h6>
+  </div>
+</div>
+
+{% endblock content %}
